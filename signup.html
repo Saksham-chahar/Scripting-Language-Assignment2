@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hostel Portal | Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="glass-card">
+        <h2>Hostel Registration</h2>
+        <form id="signup-form">
+            <div class="input-group">
+                <input type="text" id="reg-username" placeholder="Username" required>
+            </div>
+            
+            <div class="input-group">
+                <input type="password" id="reg-pass" placeholder="Create Password" required>
+                <span class="toggle-password">👁️</span>
+            </div>
+            
+            <div class="strength-meter">
+                <div class="strength-bar" id="bar"></div>
+            </div>
+            <div id="strength-text">Enter password</div>
+
+            <div class="input-group">
+                <input type="password" id="reg-confirm" placeholder="Confirm Password" required>
+                <span class="toggle-password">👁️</span>
+            </div>
+
+            <button type="submit" class="btn-primary">Create Account</button>
+        </form>
+
+        <div class="footer-links">
+            Already have an account? <a href="login.html">Log In</a>
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html>

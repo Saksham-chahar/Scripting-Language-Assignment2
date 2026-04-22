@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Application | Hostel 7</title>
+    <link rel="stylesheet" href="leave.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Hostel Leave Application</h2>
+        <p class="subtitle">Girivar Bhawan, NIT Kurukshetra</p>
+
+        <form action="#" method="POST">
+            
+            <div class="form-group">
+                <label for="studentName">Student Name:</label>
+                <input type="text" id="studentName" name="studentName" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="studentEmail">Student Email:</label>
+                <input type="email" id="studentEmail" name="studentEmail" placeholder="Enter institutional email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="studentID">Student ID / Roll No:</label>
+                <input type="text" id="studentID" name="studentID" placeholder="Enter your college ID" required>
+            </div>
+
+            <div class="form-group">
+                <label for="contactNo">Student Contact No:</label>
+                <input type="tel" id="contactNo" name="contactNo" placeholder="12345-67890" pattern="[0-9]{5}-[0-9]{5}" required>
+                <small>Format: 12345-67890</small>
+            </div>
+
+            <fieldset class="date-group">
+                <legend>Leave Duration</legend>
+                
+                <label for="leaveFrom">Leave From (After 4 Jan 2026):</label>
+                <input type="date" id="leaveFrom" name="leaveFrom" min="2026-01-05" required>
+
+                <label for="leaveTo">Return Date (Before 15 July 2026):</label>
+                <input type="date" id="leaveTo" name="leaveTo" max="2026-07-14" required>
+            </fieldset>
+
+            <fieldset class="reason-group">
+                <legend>Reason for Leave:</legend>
+                
+                <label><input type="radio" name="leaveReason" value="Medical" required> Medical reasons</label>
+                <label><input type="radio" name="leaveReason" value="Urgent"> Urgent Work</label>
+                <label><input type="radio" name="leaveReason" value="Study"> Study Break</label>
+                <label><input type="radio" name="leaveReason" value="Closing"> Hostel / Academic closing</label>
+                <label><input type="radio" name="leaveReason" value="Other"> Other</label>
+            </fieldset>
+
+            <div class="form-group confirmation">
+                <label>
+                    <input type="checkbox" name="confirmDetails" required>
+                    I confirm the above information is correct and I will return by the stipulated date.
+                </label>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Application</button>
+
+            <div class="back-link">
+                <a href="index.html">&larr; Back to Home</a>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    /* Make sure you put an image named 'hostel-bg.jpg' in the same folder! */
+    /* background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('hostel-bg.jpg'); */
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('nit.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.glass-card {
+    /* background: rgba(255, 255, 255, 0.15); */
+    background: rgba(245, 198, 198, 0.5);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 40px;
+    width: 400px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    color: white;
+    text-align: center;
+}
+
+h2 { margin-bottom: 25px; font-weight: 600; letter-spacing: 1px; }
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+input {
+    width: 100%;
+    padding: 12px 40px 12px 15px; /* Extra padding on right for the eye icon */
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    color: white;
+    outline: none;
+    transition: 0.3s;
+}
+
+input::placeholder { color: rgba(255, 255, 255, 0.7); }
+input:focus { background: rgba(255, 255, 255, 0.2); border-color: #3498db; }
+
+/* Eye Icon Styling */
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+    user-select: none;
+    opacity: 0.7;
+}
+.toggle-password:hover { opacity: 1; }
+
+/* Password Strength Meter */
+.strength-meter {
+    height: 4px;
+    width: 100%;
+    background: rgba(255,255,255,0.2);
+    margin-top: -10px;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.strength-bar {
+    height: 100%;
+    width: 0%; 
+    background: #e74c3c;
+    transition: 0.5s;
+}
+
+#strength-text {
+    font-size: 11px;
+    text-align: left;
+    margin-bottom: 15px;
+    color: #f1c40f;
+}
+
+/* Math Captcha Box */
+.captcha-container { display: flex; align-items: center; gap: 10px; margin-bottom: 20px; }
+.captcha-box { background: #2c3e50; padding: 10px; border-radius: 5px; font-weight: bold; min-width: 80px; }
+
+.btn-primary {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #3498db;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-primary:hover:not(:disabled) { background: #2980b9; transform: translateY(-2px); }
+.btn-primary:disabled { background: #7f8c8d; cursor: not-allowed; opacity: 0.6; } /* Disabled State */
+
+.footer-links { margin-top: 20px; font-size: 0.9em; }
+.footer-links a { color: #3498db; text-decoration: none; font-weight: bold; }
